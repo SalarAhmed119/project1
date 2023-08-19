@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project 1</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body{
+                background-image: url("img/bg.png");
+            }
+            /*Element Selector
+            Syntax:-
+            element{}
+            */
+            .headernav{
+                width: 1280px;
+                height: 50px;
+                background: #333333;
+                margin:20px auto;
+            }
+            /*Direct Child Selector
+            Syntax:-
+            parent > child{}
+            */
+            .headernav > ul{
+                list-style: none;
+            }
+            .headernav > ul > li{
+                float: left;
+            }
+            .headernav > ul > li > a{
+                text-decoration: none;
+                color: #fff;
+                display: block;
+                height: 10px;
+                line-height: 10px;
+                padding: 20px;
+            }
+            .active{
+                background: #FF6347;
+            }
+            .logo{
+                background-image: url("img/logo.png");
+                background-repeat: no-repeat;
+                background-size: 20px 20px;
+                background-position: 0px 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="headernav">
+            <ul>
+                <li>
+                    <a href="#" class="logo">Company Logo</a>
+                </li>
+                <li>
+                    <a href="#" class="active"><i class="fa fa-home"></i>Active</a>
+                </li>
+                <li>
+                    <a href="#">Drop Down <i class="fa fa-angle-down fa-indicator"></i></a>
+                </li>
+                <li>
+                    <a href="#">Mega Menu <i class="fa fa-angle-down fa-indicator"></i></a>
+                </li>
+                <li>
+                    <a href="#">Grid <i class="fa fa-angle-down fa-indicator"></i></a>
+                </li>
+                <li>
+                    <a href="#">Tab Bar <i class="fa fa-angle-down fa-indicator"></i></a>
+                </li>
+                <li>
+                    <a href="#">Images <i class="fa fa-angle-down fa-indicator"></i></a>
+                </li>
+                <li>
+                    <a href="#">Contact <i class="fa fa-angle-down fa-indicator"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>
